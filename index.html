@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to POIS online shop</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script src="/js/homeslideshow.js"></script>
+	</head>
+	<body style="min-width: 980px;">
+		<div class="homepageheader" style="position: relative;">
+			<div class="signinButton loginButton">
+				<div class="uiloginbutton signinButton loginButton" style="margin-right: 40px;">
+					<?php 
+						if ($user!="") {
+							echo '<a style="text-decoration: none; color: #fff;" href="logout.php">LOG OUT</a>';
+						}
+						else {
+							echo '<a style="color: #fff; text-decoration: none;" href="signin.php">SIGN IN</a>';
+						}
+					 ?>
+					
+				</div>
+				<div class="uiloginbutton signinButton loginButton" style="">
+					<?php 
+						if ($user!="") {
+							echo '<a style="text-decoration: none; color: #fff;" href="profile.php?uid='.$user.'">Hi '.$uname_db.'</a>';
+						}
+						else {
+							echo '<a style="text-decoration: none; color: #fff;" href="login.php">LOG IN</a>';
+						}
+					 ?>
+				</div>
+			</div>
+			<div style="float: left; margin: 5px 0px 0px 23px;">
+				<a href="index.php">
+					<img style=" height: 75px; width: 75px;" src="image/ebuybdlogo.png">
+				</a>
+			</div>
+			<div class="">
+				<div id="srcheader">
+					<form id="newsearch" method="get" action="search.php">
+					        <input type="text" class="srctextinput" name="keywords" size="21" maxlength="120"  placeholder="Search Here..."><input type="submit" value="search" class="srcbutton" >
+					</form>
+				<div class="srcclear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="home-welcome">
+			<div class="home-welcome-text" style="background-image: url(image/homebackgrndimg.png); height: 380px; ">
+				<h1 style="margin: 0px;">Welcome To Pois Online Store</h1>
+				<h2>Largest Online Shopping In Kailasa</h2>
+			</div>
+		</div>
+		<div class="home-prodlist">
+			<div>
+				<h3 style="text-align: center;">Products Category</h3>
+			</div>
+			<div style="padding: 20px 30px; width: 85%; margin: 0 auto;">
+				<ul style="float: left;">
+					<li style="float: left; padding: 25px;">
+						<div class="home-prodlist-img"><a href="gadgets/smartphone.php">
+							<img src="./image/product/smartphone/smartphones.jpg" class="home-prodlist-imgi">
+							</a>
+						</div>
+					</li>
+				</ul>
+				<ul style="float: left;">
+					<li style="float: left; padding: 25px;">
+						<div class="home-prodlist-img"><a href="gadgets/tv.php">
+							<img src="./image/product/tv/Most-Popular-tvs-for-gadgets10.png" class="home-prodlist-imgi">
+							</a>
+						</div>
+					</li>
+				</ul>
+				<ul style="float: left;">
+					<li style="float: left; padding: 25px;">
+						<div class="home-prodlist-img"><a href="gadgets/laptop.php">
+							<img src="./image/product/smartphone/laptop 1.png" class="home-prodlist-imgi"></a>
+						</div>
+					</li>
+				</ul>
+				<ul style="float: left;">
+					<li style="float: left; padding: 25px;">
+						<div class="home-prodlist-img"><a href="gadgets/speaker.php">
+							<img src="./image/product/beauty/toiletries.png" class="home-prodlist-imgi"></a>
+						</div>
+					</li>
+				</ul>
+				<ul style="float: left;">
+					<li style="float: left; padding: 25px;">
+						<div class="home-prodlist-img"><a href="gadgets/sw.php">
+							<img src="./image/product/footwear/footwear1.png" class="home-prodlist-imgi"></a>
+						</div>
+					</li>
+				</ul>
+				<ul style="float: left;">
+					<li style="float: left; padding: 25px;">
+						<div class="home-prodlist-img"><a href="gadgets/headphone.php">
+							<img src="./image/product/smartphone/tshirts1.png" class="home-prodlist-imgi"></a>
+						</div>
+					</li>
+				</ul>
+				<ul style="float: left;">
+					<li style="float: left; padding: 25px;">
+						<div class="home-prodlist-img"><a href="gadgets/hdd.php">
+							<img src="./image/product/watch/watches1.png" class="home-prodlist-imgi"></a>
+						</div>
+					</li>
+				</ul>
+				<ul style="float: left;">
+					<li style="float: left; padding: 25px;">
+						<div class="home-prodlist-img"><a href="gadgets/charger.php">
+							<img src="./image/product/ornament/earrings1.png" class="home-prodlist-imgi"></a>
+						</div>
+					</li>
+				</ul>
+			</div>			
+		</div>
+	</body>
+</html>
